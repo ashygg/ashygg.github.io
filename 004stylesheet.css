@@ -1,0 +1,202 @@
+#nav {
+width: 100%;
+text-align: center;
+top: 0;
+background-color: rgb(167, 187, 214);
+padding: 18px 20px;
+z-index: 9999;
+}
+
+#nav a {
+text-transform: uppercase;
+float: center;
+color: black;
+text-align: center;
+padding: 14px 16px;
+font-size: 17px;
+display: inline;
+text-decoration: none;
+transition: all 0.5s;
+border-radius: 5px;
+}
+
+#nav a:hover {
+transition: all 0.5s;
+background-color: lavender;
+color: gray;
+}
+
+#nav a.active {
+  background-color: lightsteelblue;
+  color: black;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+padding:20px;
+}
+
+.content {
+padding: 10px;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+h1 {
+color: thistle;
+font-family:'georgia', serif;
+font-size: 250%;
+text-align: center;
+letter-spacing: 1px;
+padding: 60px;
+}
+
+h2 {
+font-family: 'courier', monospace;
+text-align: left;
+padding-top: 20px;
+}
+
+h3 {
+font-family: 'courier', monospace;
+text-align: center;
+padding-top: 20px;
+}
+
+body {
+background-color: lightsteelblue;
+font-family: 'andale mono', monospace;
+font-size: 15px;
+text-align: left;
+}
+
+.textbox {
+background-color: rgb(211, 225, 245);
+border-radius: 5px;
+padding: 5px;
+}
+
+* {
+box-sizing: border-box
+}
+
+.column {
+float: left;
+width: 50.00%;
+padding: 5px;
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.spotify-slides {
+max-width: 750px;
+position: relative;
+margin: auto;
+}
+
+.prev, .next {
+cursor: grab;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: dimgray;
+font-weight: bold;
+font-size: 18px;
+transition: 0.5s ease;
+border-radius: 5px;
+user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 5px;
+}
+
+.prev:hover, .next:hover {
+background-color: lavender;
+}
+
+.text {
+color: black;
+font-size: 15px;
+padding: 8px 12px;
+position: relative;
+bottom: 5px;
+width: 100%;
+text-align: center;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: lightgray;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.5s ease;
+}
+
+.active, .dot:hover{
+background-color: white;
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: 0.5}
+to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.top-img {
+background-image: url("assets/images/star.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+.credit {
+text-align: right;
+font-size:10px;
+}
+
+.credit2 {
+text-align: center;
+font-size:10px;
+}
+
+.footer {
+text-align: center;
+padding: 5px;
+background-color: lavender;
+color: black;
+}
